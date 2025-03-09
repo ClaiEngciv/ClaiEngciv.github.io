@@ -8,31 +8,33 @@
 /* Estilo da imagem da capa (topo da página) */
 .capa-container {
     position: relative;
-    height: 25vh; /* A altura da imagem ocupa 1/4 da altura da tela */
+    height: 25vh; /* A altura da imagem ocupa 25% da altura da tela */
     width: 100%; /* Largura total da tela */
+    overflow: hidden; /* Esconde o que excede os limites do container */
 }
 
 .capa {
     width: 100%;
     height: 100%; /* A altura da imagem será 100% da altura do seu container */
     object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
-    border-radius: 15px; /* Cantos arredondados da imagem */
+    object-position: center; /* Garante que a imagem seja centralizada */
 }
 
 /* Estilo do título dentro da imagem de capa */
 header h1 {
     position: absolute;
-    top: 20%; /* Posição do título dentro da imagem */
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o alinhamento */
     color: white;
-    font-size: 6vw; /* Tamanho da fonte ajustável conforme o tamanho da tela */
+    font-size: 8vw; /* Ajusta o tamanho da fonte com base na largura da tela */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+    z-index: 1; /* Garante que o texto fique acima da imagem */
 }
 
 /* Estilo para a palavra "Brasil" com imagem de fundo e borda */
 .brasil {
-    font-size: 15vw; /* Tamanho da fonte depende da largura da tela */
+    font-size: 10vw; /* Tamanho da fonte depende da largura da tela */
     font-weight: bolder; /* Torna as letras mais grossas */
     background-image: url('https://raw.githubusercontent.com/ClaiEngciv/ClaiEngciv.github.io/28888826397cada4c53e003ce6ffdacf7987cc98/img/flag-brazil.jpg'); /* Caminho da imagem da bandeira do Brasil */
     background-size: cover; /* A imagem cobre todo o fundo */
