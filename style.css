@@ -1,87 +1,95 @@
-
-/* Define as cores específicas para o B e r */
-.verde {
-    font-size: 100px;
-    font-weight: bold;
-    color: green; /* Cor verde para B */
-}
-
-.amarelo {
-    font-size: 100px;
-    font-weight: bold;
-    color: yellow; /* Cor amarela para r */
-}
-
-/* Estilos da imagem de capa */
+/* Estilo da imagem da capa */
 .capa-container {
-    position: relative; /* Necessário para posicionar o texto sobre a imagem */
-    width: 100%; /* A imagem ocupa toda a largura da página */
-    height: 300px; /* Defina a altura da capa conforme preferir */
+    position: relative;
+    text-align: center;
 }
 
 .capa {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Faz com que a imagem cubra toda a área sem distorcer */
-    border-radius: 15px; /* Cantos arredondados */
+    height: auto;
+    border-radius: 15px; /* Cantos arredondados da imagem */
 }
 
-/* Estilo para o título dentro da imagem */
-h1 {
-    position: absolute; /* Posiciona o título sobre a imagem */
-    top: 50%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste fino para centralizar exatamente */
-    font-size: 5rem;
-    color: rgb(255, 255, 255); /* Cor do texto */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para melhorar a legibilidade */
-    text-align: center; /* Centraliza o texto */
+/* Estilo do título dentro da imagem de capa */
+header h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 6vw; /* Tamanho da fonte ajustável conforme o tamanho da tela */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Outros estilos para a página */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f0f1;
-    color: #ffffff;
+/* Estiliza a palavra Brasil com mais peso e a imagem como fundo */
+.brasil {
+    font-size: 15vw; /* Tamanho da fonte depende da largura da tela */
+    font-weight: bolder; /* Torna as letras mais grossas */
+    background-image: url('https://raw.githubusercontent.com/ClaiEngciv/ClaiEngciv.github.io/28888826397cada4c53e003ce6ffdacf7987cc98/img/flag-brazil.jpg'); /* Caminho da imagem no GitHub */
+    background-size: cover; /* A imagem cobre todo o fundo */
+    background-position: center; /* Centra a imagem atrás das letras */
+    color: transparent; /* Tornando as letras transparentes para ver a imagem por trás */
+    -webkit-background-clip: text; /* Faz com que a imagem seja visível apenas nas letras */
+    background-clip: text; /* Faz com que a imagem seja visível apenas nas letras */
+}
+
+/* Estilo do botão e outras partes do site */
+main {
     padding: 20px;
     text-align: center;
 }
 
-main {
-    padding-top: 20px;
-}
-
-.opcoes {
-    margin-top: 20px;
-}
-
 .botao {
     display: inline-block;
-    margin: 10px;
     padding: 10px 20px;
-    font-size: 3rem;
+    margin: 10px;
+    text-decoration: none;
     background-color: #4CAF50;
     color: white;
-    text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    font-size: 4vw; /* Tamanho ajustável */
 }
 
 .botao:hover {
     background-color: #45a049;
 }
 
-#botao {
-    margin-top: 20px;
+button {
     padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: #2196F3;
-    color: white;
+    font-size: 4vw; /* Tamanho ajustável */
     border: none;
+    background-color: #ff9800;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#botao:hover {
-    background-color: #0b7dda;
+button:hover {
+    background-color: #fb8c00;
+}
+
+/* Media Queries para telas menores (exemplo: celulares) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 10vw; /* Ajusta o tamanho da fonte em telas menores */
+    }
+    .brasil {
+        font-size: 20vw; /* Ajusta o tamanho da palavra Brasil para telas menores */
+    }
+    .botao, button {
+        font-size: 5vw; /* Ajusta o tamanho dos botões para telas menores */
+    }
+}
+
+/* Media Queries para telas ainda menores (exemplo: celulares em modo retrato) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 12vw; /* Ajusta ainda mais em telas muito pequenas */
+    }
+    .brasil {
+        font-size: 25vw; /* Ajusta o tamanho da palavra Brasil para telas muito pequenas */
+    }
+    .botao, button {
+        font-size: 6vw; /* Ajusta o tamanho dos botões em telas muito pequenas */
+    }
 }
