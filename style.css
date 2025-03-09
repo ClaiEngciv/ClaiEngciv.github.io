@@ -31,6 +31,7 @@ header h1 {
     color: transparent; /* Tornando as letras transparentes para ver a imagem por trás */
     -webkit-background-clip: text; /* Faz com que a imagem seja visível apenas nas letras */
     background-clip: text; /* Faz com que a imagem seja visível apenas nas letras */
+    text-stroke: 2px white; /* Adiciona borda branca fina */
 }
 
 /* Estilo do botão e outras partes do site */
