@@ -1,6 +1,6 @@
 .capa-container {
     position: relative;
-    height: 20vh; /* 20% da altura da tela */
+    height: 15vh; /* 20% da altura da tela */
     text-align: center;
 }
 
@@ -17,14 +17,14 @@ header h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 4vw; /* Tamanho ajustável */
+    font-size: 1vw; /* Tamanho ajustável */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
 /* Estiliza a palavra Brasil com mais peso e a imagem como fundo */
 .brasil {
-    font-size: 15vw; /* Tamanho da fonte depende da largura da tela */
+    font-size: 5vw; /* Tamanho da fonte depende da largura da tela */
     font-weight: bolder; /* Torna as letras mais grossas */
     background-image: url('https://raw.githubusercontent.com/ClaiEngciv/ClaiEngciv.github.io/28888826397cada4c53e003ce6ffdacf7987cc98/img/flag-brazil.jpg'); /* Caminho da imagem no GitHub */
     background-size: cover; /* A imagem cobre todo o fundo */
