@@ -1,25 +1,26 @@
-/* Estilo da imagem da capa */
 .capa-container {
     position: relative;
+    height: 20vh; /* 20% da altura da tela */
     text-align: center;
 }
 
 .capa {
     width: 100%;
-    height: auto;
-    border-radius: 15px; /* Cantos arredondados da imagem */
+    height: 100%; /* Ocupa 100% da altura do container */
+    object-fit: cover; /* Garante que a imagem mantenha a proporção e preencha o espaço */
+    border-radius: 15px;
 }
 
-/* Estilo do título dentro da imagem de capa */
 header h1 {
     position: absolute;
-    top: 20%;
+    top: 50%; /* Centraliza verticalmente */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 6vw; /* Tamanho da fonte ajustável conforme o tamanho da tela */
+    font-size: 4vw; /* Tamanho ajustável */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 
 /* Estiliza a palavra Brasil com mais peso e a imagem como fundo */
 .brasil {
