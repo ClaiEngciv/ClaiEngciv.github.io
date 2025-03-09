@@ -8,7 +8,7 @@
 /* Estilo da imagem da capa (topo da página) */
 .capa-container {
     position: relative;
-    height: 20vh; /* A altura da imagem ocupa 1/4 da altura da tela */
+    height: 25vh; /* A altura da imagem ocupa 1/4 da altura da tela */
     width: 100%; /* Largura total da tela */
 }
 
