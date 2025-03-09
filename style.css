@@ -1,3 +1,17 @@
+
+/* Define as cores específicas para o B e r */
+.verde {
+    font-size: 100px;
+    font-weight: bold;
+    color: green; /* Cor verde para B */
+}
+
+.amarelo {
+    font-size: 100px;
+    font-weight: bold;
+    color: yellow; /* Cor amarela para r */
+}
+
 /* Estilos da imagem de capa */
 .capa-container {
     position: relative; /* Necessário para posicionar o texto sobre a imagem */
