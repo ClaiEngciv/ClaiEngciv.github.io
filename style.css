@@ -25,7 +25,7 @@ header h1 {
 .brasil {
     font-size: 15vw; /* Tamanho da fonte depende da largura da tela */
     font-weight: bolder; /* Torna as letras mais grossas */
-    background-image: url('img/elderly-person-children-holding-plant.jpg'); /* Caminho da imagem no diretório img */
+    background-image: url('img/flag-brazil.jpg'); /* Caminho da imagem no diretório img */
     background-size: cover; /* A imagem cobre todo o fundo */
     color: transparent; /* Tornando as letras transparentes para ver a imagem por trás */
     -webkit-background-clip: text; /* Faz com que a imagem seja visível apenas nas letras */
